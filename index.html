@@ -45,6 +45,8 @@
         let a6 = "a6 redd";
         document.getElementById("LoL").innerHTML = "Valorant"
         document.getElementById("LoL").setAttribute("class", a6)
+        document.getElementById("LoL").classList.add('a6')
+        document.getElementById("LoL").classList.remove('a7')
     }
     
     function LaL(){
@@ -65,7 +67,18 @@
         }
         
     }
+    function TurnOnAnimation(){
+        document.getElementById("PlayFreeButton").classList.add('PlayFreeAnimation')
+        document.getElementById("PlayCostButton").classList.add('PlayCostAnimation')
+        document.getElementById("FreeCostButton").classList.add('FreeCostAnimation')
+    }
   
+    function TurnOffAnimation(){
+        document.getElementById("PlayFreeButton").classList.remove('PlayFreeAnimation')
+        document.getElementById("PlayCostButton").classList.remove('PlayCostAnimation')
+        document.getElementById("FreeCostButton").classList.remove('FreeCostAnimation')
+    }
+
     TongAB(4, 5);
     VongLap(4);
     Neu(4);
@@ -90,16 +103,18 @@
     <div class="a4">
         <div class="a5">A 5v5 character-based tactical shooter</div>
         <div id="LoL" class="a6">VALORANT</div>
-        <button onclick="LoL()" class="a7 red">PLAY FREE</button>
-        <button onclick="LaL()" class="a7 red">PLAY COST</button>
-        <button onclick="LiL('blue')" class="a7 red">FREE COST</button>
+        <button id="PlayFreeButton" onclick="LoL()" class="a7 red PlayFreeAnimation">PLAY FREE</button>
+        <button id="PlayCostButton"onclick="LaL()" class="a7 red PlayCostAnimation">PLAY COST</button>
+        <button id="FreeCostButton"onclick="LiL('blue')" class="a7 red FreeCostAnimation">FREE COST</button>
+        <button onclick="TurnOnAnimation()" class="a7 red">TURN ON</button>
+        <button onclick="TurnOffAnimation()" class="a7 red">TURN OFF</button>
     </div>
     <div class="news_section">
         <div class="a9"><b>GO TO THE NEW PAGE.</b></div>
         <div class="thelatest"><b>THE LATEST</b></div>
         <div class="news_container">
             <div class="news" >
-                <img src ='https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltebdd1808b9022158/63069115d39eb86e3e1eb0b9/VCT22_RTC_Thumbnails_YT_VAL_01_Jett_LOC_16x9.jpg?auto=webp&disable=upscale&width=488'></img>
+                <img src ='https://media.tenor.com/lTn_Gj0ljzYAAAAd/jett-valorant.gif?fbclid=IwAR3ks5lKIX4Yxv40L2CN-jaXKbOZfR2la_O8aS-JJjOGW16Bb5oK8jWWoyo'></img>
                 <div class="date">
                     <a>09/20/22 . </a>
                     <a>GAME UPDATES</a>
@@ -110,7 +125,7 @@
             </div> 
 
             <div class="news" >
-                <img src ='https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltebdd1808b9022158/63069115d39eb86e3e1eb0b9/VCT22_RTC_Thumbnails_YT_VAL_01_Jett_LOC_16x9.jpg?auto=webp&disable=upscale&width=488'></img>
+                <img width = 200% src ='https://steamuserimages-a.akamaihd.net/ugc/1482199559506861522/A6028E39EE1BB8A29817FD6A163ECD54462889A0/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true&fbclid=IwAR17-kUq7UUX1LXax_gY7CxW3FL1_yMNqlNRk4nFfvRyofE9Q8HfGmcKVvE'></img>
                 <div class="date">
                     <a>09/20/22 . </a>
                     <a>GAME UPDATES</a>
@@ -121,7 +136,7 @@
             </div>
 
             <div class="news" >
-                <img src ='https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltebdd1808b9022158/63069115d39eb86e3e1eb0b9/VCT22_RTC_Thumbnails_YT_VAL_01_Jett_LOC_16x9.jpg?auto=webp&disable=upscale&width=488'></img>
+                <img src ='https://steamuserimages-a.akamaihd.net/ugc/1464185161000055061/745302C2D015802A7947BAF630B6DCF30B08AE31/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true&fbclid=IwAR0EYxpLUVLDkHguMw9npnwtAsUEELNOqPnfIrkDUpk4shJmXvfmygZr55M'></img>
                 <div class="date">
                     <a>09/20/22 . </a>
                     <a>GAME UPDATES</a>
