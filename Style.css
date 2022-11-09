@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'VALORANT';
+    src: url('VALORANT-Regular.woff2') format('woff2'),
+        url('VALORANT-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    margin: 0px;
+    background-color: rgb(236, 222, 224);
+}
+.a1{
+    position: fixed;
+    background-color : black;
+    padding-top: 15px;
+    text-align: center; 
+    font-size : 12px;
+    height:  40px;
+    width: 100%
+
+}
+
+.a1 a {
+
+    color : white;  
+    padding: 20px 5px 20px 5px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.a1 a:hover {
+    color:orange;
+
+}
+
+
+
+.a1 .playbutton{
+    color : black;  
+    margin-left: 80px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    background-color : red;
+    border-radius: 10px;
+}
+.a4{
+    height: 300px; 
+    padding: 120px;
+    text-align: center; 
+    font-size : 14px;
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9695da32975f3e85/62cc8547719eb73892495716/VALORANT_ANNO22_SHATTERED_16x9_27s0.jpg');
+    background-size: 1290px;
+}
+
+.a5{
+    color : white;  
+    padding: 5px 5px 5px 5px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'times new roman';
+}
+
+.a6{
+    color : white;  
+    padding: 5px 5px 20px 5px;
+    margin: 0px;
+    text-decoration: none;
+    font-size : 100px;
+    font-family: 'VALORANT';
+}
+.redd{
+    color : red;  
+}
+.bluee{
+    color: blue;
+}
+.a7{
+    color : white;    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    /* background-color : red; */
+    width: 15% ;
+    border: 0px;
+}
+.red{
+    background-color: red;
+}
+.a7:hover{
+    color : red;     
+    background-color : white;
+}
+.im{
+    height: 50%;
+    width: 8%;
+}
+
+
+
+.news_section{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.news_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news_container img{
+    height: 200px;
+    width: 320px;
+    /* margin-top: 10px; */
+}
+.news{
+
+}
+
+.Dimension_Section{
+    height: 700px;
+}
+
+
+.Dimension_Img{
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fecfc769-eca8-495b-baba-ca4f58048dc7/dfd3x57-fbfa37ec-89f6-47f7-8cae-224a4f47b30d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZlY2ZjNzY5LWVjYTgtNDk1Yi1iYWJhLWNhNGY1ODA0OGRjN1wvZGZkM3g1Ny1mYmZhMzdlYy04OWY2LTQ3ZjctOGNhZS0yMjRhNGY0N2IzMGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.DDsXi5SH-R2ZPrQmxH2L4zn0JH_xENWYNExmnpwmZUU");
+    background-size: 2400px; 
+    
+}
+.Dimension_content{
+    height: 1000px;
+    margin-top: 120px;
+    padding-left: 120px;
+    padding-top :320px;
+    text-align: left;
+    color: white;
+}
+
+
+.ButtonOverview{
+    color : white; 
+    margin-top: 20px;   
+    margin-left: 2%;
+    text-decoration: none;
+    background-color : red;
+    width: 200px ;
+    height: 50px;
+    font-size : 14px;
+    text-align: center;
+}
+
+.ButtonOverview:hover{
+    color : white;     
+    background-color : rgba(47, 41, 41, 0.193);
+}
+
+
+.AboutTheGame_section{
+    
+}
+
+#WeAreValorant{
+    font-size : 70px;
+    margin: 10px 0% 10px 10%;
+}
+
+.AboutTheGame_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about{
+    width: 250px;
+}
+
+.about_title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about_content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(105, 100, 100)
+}
+
+.about_LearnTheGame{
+    color : white;    
+    margin-top: 30px;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    background-color : red;
+    width: 100% ;
+    text-align : center;
+}
+
+.about_LearnTheGame:hover{
+    background-color: black;
+}
+
+.a14:hover{
+    background-color: black;
+}
+
+
+
+table{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+.im2{
+    height:10%;
+    width: 10%;
+}
+h6,h1{
+    margin :0px; 
+}
+.td1{
+    width: 70%;
+}
+
+.BlueText{
+    color: blue;
+    font-size: 20px;
+}
+
+
+

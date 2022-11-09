@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preload" href="VALORANT-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="Style.css">
+    <title>Document</title>
+</head>
+<script>
+    function Neu(x){
+        if(x>5){
+            console.log(x + " lon hon 5");
+        }
+        else if(x==5){
+            console.log(x + " bang 5");
+        }
+        else{
+            console.log(x + " be hon 5")
+        }
+    }
+    function VongLap(x){
+        for(i=0; i<10;i++){
+            x=x+i;
+        }
+        console.log(x)
+    }
+    function TongAB(x, y){
+        console.log(x + y)
+    }
+    function ChaySo(){
+        for(i=1; i<=10; i++){
+            console.log(i)
+        }
+    }
+    function InPlayFree(){
+        console.log("PLAY FREE")
+    }
+
+    function WeAreValorant(){
+        document.getElementById("WeAreValorant").innerHTML = "Valorant"
+    }
+    function LoL(){
+        let a6 = "a6 redd";
+        document.getElementById("LoL").innerHTML = "Valorant"
+        document.getElementById("LoL").setAttribute("class", a6)
+    }
+    
+    function LaL(){
+        let a7 = "a6 bluee";
+        document.getElementById("LoL").innerHTML = "Lich op le gen"
+        document.getElementById("LoL").setAttribute("class", a7)
+    }
+    function LiL(x){
+        let a7 = "a6 bluee";
+        let a6 = "a6 redd";
+        if(x == 'blue'){
+            document.getElementById("LoL").innerHTML = "Lich op le gen"
+            document.getElementById("LoL").setAttribute("class", a7)
+    }
+        else if(x == 'red'){
+            document.getElementById("LoL").innerHTML = "Valorant"
+            document.getElementById("LoL").setAttribute("class", a6)
+        }
+        
+    }
+  
+    TongAB(4, 5);
+    VongLap(4);
+    Neu(4);
+    Neu(5);
+    Neu(6);
+    
+</script>
+<body>
+
+    <div class="a1">
+        <img class ="im" src="https://cdn.shopify.com/s/files/1/0068/7554/5622/t/16/assets/pf-bae99635--image-2.png?v=1625039588&fbclid=IwAR3sOMgdErKgDaQ3oepmZES0bnwy3wEE9MdmssI4sCc_if8v-dpFe0ZxbMs" ></img>
+        <a  href="page1.html">GAME INFO</a>
+        <a href="page2.html">MEDIA</a>
+        <a >NEWS</a>
+        <a href ="LeaderBoards.html">LEADERBOARDS</a>
+        <a>SUPPORT</a>
+        <a >OUR SOCIALS</a>
+        <a>ESPORT</a>
+        <a>PBE SIGNUP</a>
+        <a class="playbutton">PLAY NOW</a>
+    </div>
+    <div class="a4">
+        <div class="a5">A 5v5 character-based tactical shooter</div>
+        <div id="LoL" class="a6">VALORANT</div>
+        <button onclick="LoL()" class="a7 red">PLAY FREE</button>
+        <button onclick="LaL()" class="a7 red">PLAY COST</button>
+        <button onclick="LiL('blue')" class="a7 red">FREE COST</button>
+    </div>
+    <div class="news_section">
+        <div class="a9"><b>GO TO THE NEW PAGE.</b></div>
+        <div class="thelatest"><b>THE LATEST</b></div>
+        <div class="news_container">
+            <div class="news" >
+                <img src ='https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltebdd1808b9022158/63069115d39eb86e3e1eb0b9/VCT22_RTC_Thumbnails_YT_VAL_01_Jett_LOC_16x9.jpg?auto=webp&disable=upscale&width=488'></img>
+                <div class="date">
+                    <a>09/20/22 . </a>
+                    <a>GAME UPDATES</a>
+                </div>
+                <div class="title">
+                    VALORANT PATCH NOTES 5.06
+                </div>
+            </div> 
+
+            <div class="news" >
+                <img src ='https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltebdd1808b9022158/63069115d39eb86e3e1eb0b9/VCT22_RTC_Thumbnails_YT_VAL_01_Jett_LOC_16x9.jpg?auto=webp&disable=upscale&width=488'></img>
+                <div class="date">
+                    <a>09/20/22 . </a>
+                    <a>GAME UPDATES</a>
+                </div>
+                <div class="title">
+                    VALORANT PATCH NOTES 5.06
+                </div>
+            </div>
+
+            <div class="news" >
+                <img src ='https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltebdd1808b9022158/63069115d39eb86e3e1eb0b9/VCT22_RTC_Thumbnails_YT_VAL_01_Jett_LOC_16x9.jpg?auto=webp&disable=upscale&width=488'></img>
+                <div class="date">
+                    <a>09/20/22 . </a>
+                    <a>GAME UPDATES</a>
+                </div>
+                <div class="title">
+                    VALORANT PATCH NOTES 5.06
+                </div>
+            </div>
+            
+        </div>       
+    </div>
+    <div class="Dimension_Section Dimension_Img">        
+            <div class="Dimension_content ">
+                <div style="font-size: 24px">EPISODE_5 // ACT II / YR 2</div>
+                <div style="font-size: 50px">DIMENSION</div>
+                <button class="ButtonOverview">ACT II OVERVIEW</button>
+            </div>
+    </div>
+    
+    <div class="AboutTheGame_section">
+        <div id="WeAreValorant" class="WeAreValorant"><b>WE ARE VALORANT</b></div>
+        <div class="AboutTheGame_container">
+            <div class="about">
+                <div class="about_title">DEFY THE LIMITS</div>
+                <span class="about_content">Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.</span>
+                <button onclick="WeAreValorant()" class="about_LearnTheGame">LEARN THE GAME</button>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2BYhYUsqX-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
