@@ -11,7 +11,8 @@ body{
     background-color: rgb(236, 222, 224);
 }
 .a1{
-    position: fixed;
+    position: fixed; 
+    z-index: 100;
     background-color : black;
     padding-top: 15px;
     text-align: center; 
@@ -44,13 +45,30 @@ body{
     background-color : red;
     border-radius: 10px;
 }
+
+#myVideo{
+    position: absolute;
+    z-index: -1;
+    height: 500px;
+    object-fit: cover;
+}
 .a4{
+    position: relative;
     height: 300px; 
     padding: 120px;
+    padding-bottom: 80px;
     text-align: center; 
     font-size : 14px;
-    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt9695da32975f3e85/62cc8547719eb73892495716/VALORANT_ANNO22_SHATTERED_16x9_27s0.jpg');
-    background-size: 1290px;
+}
+
+.triangle{
+    position: absolute;
+    bottom: 0px;
+    left: 0;    
+    width:0;
+    height:0;
+    border-right: 50px solid transparent;
+	border-bottom: 50px solid rgb(236, 222, 224);
 }
 
 .a5{
@@ -76,29 +94,45 @@ body{
     color: blue;
 }
 .a7{
-    color : white;    
+    position: relative;
+    color : white;
     margin-left: auto;
     margin-right: auto;
     padding: 15px 20px 15px 20px;
-    text-decoration: none;
-    /* background-color : red; */
-    width: 15% ;
-    height: 15%;
-    transition: color 2s, width 2s, height 2s, background-color 2s, border-radius 2s;
-    border: 0px;
-    
-    border-radius: 0;
+    width:  200px;
+    height: 45px;
+    transition: background-color 1s ;
+    border: none;   
+    background-color:rgb(50, 50, 50); 
 }
+
+.blackPlayFree{
+    background-color: rgb(251, 88, 88);
+    position: absolute;
+    line-height: 45px;
+    top: 0;
+    right: 0;
+    width:  200px;
+    height: 45px;
+    transition: width 1s, height 1s;
+    opacity:0.1;
+}
+
+.a7:hover .blackPlayFree{
+    width:  0;
+}
+
+.playfree{
+    position: relative;
+    z-index: 99;
+}
+
 .red{
     background-color: red;
 }
-.a7:hover{
-    color : red;  
-    width : 25%;
-    height : 25%;   
-    background-color : white;
-    border-radius: 50%;
-}
+/* .a7:hover{
+    background-color : rgb(52, 52, 52); 
+} */
 /* @keyframes playfree{
     25% {background-color:red}
     50% {background-color:blue}
@@ -155,7 +189,7 @@ body{
         border-radius: 0px
     }
     50% {
-        background-color: red;
+        background-color: rgb(247, 83, 83);
         border-radius: 50%
     }
     100%{
@@ -171,8 +205,34 @@ body{
 
 
 .news_section{
+    padding-top: 60px;
+    position: relative;
     padding-left: 80px;
     padding-right: 80px;
+}
+
+.a9{
+    text-align: right;
+    font-size: 16px;
+    color: rgb(247, 83, 83);
+}
+
+.dot1{
+    position: absolute;
+    top: 30px;
+    left : 50%;
+    height:7px;
+    width:7px;
+    background-color: rgb(247, 83, 83);
+}
+
+.thelatest{
+    position: absolute;
+    top:42px;
+    font-size: 50px;
+    color: rgb(247, 83, 83);
+    z-index: 80;
+
 }
 
 .news_container{
@@ -180,14 +240,26 @@ body{
     justify-content: space-between;
 }
 
-.news_container img{
+.news_container .news img{
+    position: relative;
     height: 200px;
     width: 320px;
     /* margin-top: 10px; */
     object-fit: cover;
 }
-.news{
 
+.HoverNew{
+    position: absolute;
+    top: 78px;
+    background-color: rgb(247, 83, 83);
+    opacity: 0.5;
+    height: 200px;
+    width: 0px;
+    transition: width 0.3s;
+}
+
+.news_container .news:hover .HoverNew{
+    width: 320px;
 }
 
 .Dimension_Section{
